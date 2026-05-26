@@ -11,6 +11,6 @@ def fetch_data(filename):
 
 def create_submission_csv(pred, index):
     submission = pd.DataFrame()
-    submission['Id'] = index
+    submission['id'] = index
     submission['sales'] = pred
     submission.to_csv('submission.csv', index=False)
